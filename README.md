@@ -81,7 +81,7 @@ La envolvente protectora fue modelada en **SolidWorks**, adaptada a las dimensio
 
 | Carcasa | Vista lateral |
 | :---: | :---: |
-| ![Carcasa](Imagenes/carcasa_sup.jpg) | ![Lateral](Imagenes/lateral1.png)  |
+| ![Carcasa](Imagenes/carcasa_sup.png) | ![Lateral](Imagenes/lateral1.png)  |
 
 ---
 
