@@ -75,13 +75,13 @@ El concentrador está construido sobre una tarjeta de circuito impreso (PCB) per
 
 La envolvente protectora fue modelada en **SolidWorks**, adaptada a las dimensiones finales de la PCB de 63x95 mm, permitiendo el fácil montaje del puerto USB-C, conector de alimentación Jack, antena SMA, amplificador AB-IOT y display OLED.
 
-| Vista de Vistas CAD | Ensamble Interno CAD |
+| Ensamble Interno CAD | Tapa Superior |
 | :---: | :---: |
-| ![Cuatro Vistas CAD](Imagenes/cuatro_vistas.jpg) | ![Ensamble CAD](Imagenes/assembly.png) |
+| ![Ensamble CAD](Imagenes/assembly.png) | ![Tapa Superior](Imagenes/carcasa_sup.png) |
 
-| Ensamble Físico Ensamblado | Tapa Superior Envolvente |
+| Carcasa | Vista lateral |
 | :---: | :---: |
-| ![Ensamble Físico](Imagenes/ensamblaje.jpg) | ![Tapa Superior](Imagenes/carcasa_sup.png) |
+| ![Carcasa](Imagenes/carcasa_sup.jpg) | ![Lateral](Imagenes/lateral1.png)  |
 
 ---
 
