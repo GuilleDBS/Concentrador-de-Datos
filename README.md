@@ -9,7 +9,7 @@
 
 ---
 
-## 📌 Tabla de Contenidos
+## Tabla de Contenidos
 - [Descripción General](#-descripción-general)
 - [Arquitectura del Sistema](#-arquitectura-del-sistema)
 - [Especificaciones del Hardware](#-especificaciones-del-hardware)
@@ -28,7 +28,7 @@
 
 ---
 
-## 🚀 Descripción General
+## Descripción General
 
 El **Concentrador de Datos** actúa como un **Gateway o Puente Asíncrono bidireccional**:
 1. **Captura por Radiofrecuencia (LoRa 433 MHz)**: Escucha de forma continua paquetes de datos de medidores de energía remotos utilizando el módem SX1278 (Ra-02).
@@ -39,7 +39,7 @@ El **Concentrador de Datos** actúa como un **Gateway o Puente Asíncrono bidire
 
 ---
 
-## 🏗 Arquitectura del Sistema
+## Arquitectura del Sistema
 
 ```mermaid
 flowchart TD
@@ -68,7 +68,7 @@ flowchart TD
 
 ---
 
-## 💻 Especificaciones del Hardware
+## Especificaciones del Hardware
 
 El concentrador está construido sobre una tarjeta de circuito impreso (PCB) personalizada de 2 capas tipo SMD de **63 × 95 mm**:
 
@@ -93,7 +93,7 @@ El concentrador está construido sobre una tarjeta de circuito impreso (PCB) per
 
 ---
 
-## 📐 Diseño Mecánico y Envolvente CAD
+## Diseño Mecánico y Envolvente CAD
 
 La envolvente protectora fue modelada en **SolidWorks**, adaptada a las dimensiones finales de la PCB de 63x95 mm, permitiendo el fácil montaje del puerto USB-C, conector de alimentación Jack, antena SMA, amplificador AB-IOT y display OLED.
 
@@ -107,7 +107,7 @@ La envolvente protectora fue modelada en **SolidWorks**, adaptada a las dimensio
 
 ---
 
-## 📊 Métricas y Validación Experimental
+## Métricas y Validación Experimental
 
 Las pruebas experimentales de validación se llevaron a cabo bajo condiciones de laboratorio y de campo en la FIUNA:
 
@@ -120,7 +120,7 @@ Las pruebas experimentales de validación se llevaron a cabo bajo condiciones de
 
 ---
 
-## 🧠 Explicación Detallada del Firmware (`main_concentrador.cpp`)
+## Explicación Detallada del Firmware (`main_concentrador.cpp`)
 
 El firmware del concentrador está desarrollado en C++ utilizando el framework **ESP-IDF v6** y el sistema operativo en tiempo real **FreeRTOS**.
 
@@ -243,7 +243,7 @@ if (packet.node_id < 5) {
 
 ---
 
-## 📌 Mapeo de Pines y Conexiones
+## Mapeo de Pines y Conexiones
 
 ### Módulo LoRa SX1278 (Ra-02) — Bus SPI
 | Señal | Pin ESP32-S3 | Descripción |
@@ -263,7 +263,7 @@ if (packet.node_id < 5) {
 
 ---
 
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```text
 Concentrador/
@@ -297,7 +297,7 @@ Concentrador/
 
 ---
 
-## 🛠 Instrucciones de Compilación e Instalación
+## Instrucciones de Compilación e Instalación
 
 ### Requisitos Previos
 1. **ESP-IDF v5.x / v6.x** instalado y configurado en el sistema.
@@ -321,7 +321,7 @@ idf.py -p COMx monitor
 
 ---
 
-## 👨‍💻 Autores y Créditos
+## Autores y Créditos
 
 - **Guillermo Benítez** — Facultad de Ingeniería, Universidad Nacional de Asunción (FIUNA).
 - **Asunción, Paraguay**.
