@@ -64,9 +64,9 @@ El concentrador está construido sobre una tarjeta de circuito impreso (PCB) per
 | :---: | :---: |
 | ![PCB 3D](Imagenes/Modelo3D.png) | ![Placa Funcional](Imagenes/placa_funcional.jpg) |
 
-| Ensamble Completo de la Placa | Ensamblaje |
+| Ensamblaje | Ensamble completo |
 | :---: | :---: |
-| ![Completo](Imagenes/Completo.png) | ![Ensamblaje](Imagenes/ensamblaje.jpg) |
+| ![Ensamblaje](Imagenes/ensamblaje.jpg) | ![Completo](Imagenes/Completo.png) |
 
 
 ---
