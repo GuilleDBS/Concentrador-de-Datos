@@ -31,7 +31,7 @@
 ## Descripción General
 
 El **Concentrador de Datos** actúa como un **Gateway o Puente Asíncrono bidireccional**:
-1. **Captura por Radiofrecuencia (LoRa 433 MHz)**: Escucha de forma continua paquetes de datos de medidores de energía remotos utilizando el módem SX1278 (Ra-02).
+1. **Captura por Radiofrecuencia (LoRa 433 MHz)**: Escucha de forma continua paquetes de datos de medidores de energía remotos utilizando el chip SX1278 (Módulo Ra-02).
 2. **Filtrado y Decodificación**: Filtra tramas mediante firmas de hardware (`0xAA`) e IDs de dispositivo autorizados (`node_id < 5`), rechazando ruido o interferencias de redes externas.
 3. **Retransmisión HTTP POST**: Formatea las variables de telemetría y las envía vía Wi-Fi hacia la base de datos central en un servidor PHP/MySQL usando autenticación mediante clave API (`X-API-Key`).
 4. **Resiliencia Offline (SPIFFS)**: En caso de caída de la red Wi-Fi o del servidor, acumula las tramas en la memoria Flash interna (`/spiflash/unsent_tx.csv`). Al restablecerse la conectividad, vacía progresivamente los datos pendientes.
@@ -56,17 +56,18 @@ El concentrador está construido sobre una tarjeta de circuito impreso (PCB) per
 - **Interfaz OLED**: Display gráfico de 1.3" SH1106 128x64 píxeles conectado por bus I2C nativo.
 - **Amplificador RF Auxiliar**: Módulo AB-IOT-433 y antena omnidireccional de 10 dBi para maximizar el alcance del enlace de radiofrecuencia.
 
-| Componentes Principales | Vista 3D PCB Diseñada |
-| :---: | :---: |
-| ![Componentes](Imagenes/VARIOS1.png) | ![PCB 3D](Imagenes/Modelo3D.png) |
-
 | Ruteado y Distribución | Plano de Masa GND |
 | :---: | :---: |
 | ![Ruteado](Imagenes/Ruteado.png) | ![Plano GND](Imagenes/PlanoGND.png) |
 
-| Ensamble Completo de la Placa | Placa Funcional Construida |
+| Vista 3D PCB Diseñada |  Placa Funcional Construida  |
 | :---: | :---: |
-| ![Completo](Imagenes/Completo.png) | ![Placa Funcional](Imagenes/placa_funcional.jpg) |
+| ![PCB 3D](Imagenes/Modelo3D.png) | ![Placa Funcional](Imagenes/placa_funcional.jpg) |
+
+| Ensamble Completo de la Placa | Ensamblaje |
+| :---: | :---: |
+| ![Completo](Imagenes/Completo.png) | ![Ensamblaje](Imagenes/ensamblaje.jpg) |
+
 
 ---
 
