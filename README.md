@@ -77,7 +77,7 @@ La envolvente protectora fue modelada en **SolidWorks**, adaptada a las dimensio
 
 | Ensamble Interno CAD | Tapa Superior |
 | :---: | :---: |
-| ![Ensamble CAD](Imagenes/assembly.png) | ![Tapa Superior](Imagenes/carcasa_sup.png) |
+| ![Ensamble CAD](Imagenes/assembly.png) | ![Tapa Superior](Imagenes/Tapa_sup.png) |
 
 | Carcasa | Vista lateral |
 | :---: | :---: |
