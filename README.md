@@ -41,30 +41,7 @@ El **Concentrador de Datos** actúa como un **Gateway o Puente Asíncrono bidire
 
 ## Arquitectura del Sistema
 
-```mermaid
-flowchart TD
-    subgraph Medidores Remotos
-        N1[Nodo Medidor 1<br/>ESP32 + PZEM] -- LoRa 433 MHz --> Gateway
-        N2[Nodo Medidor 2<br/>ESP32 + PZEM] -- LoRa 433 MHz --> Gateway
-    end
-
-    subgraph Gateway ["Concentrador de Datos (ESP32-S3 Dual-Core)"]
-        LoRaModule[Receptor Ra-02 SX1278] -->|SPI Bus| Core1[lora_rx_task - CORE 1<br/>Prioridad Alta 5]
-        Core1 -->|Validación & Métricas RF| Queue[Cola FreeRTOS q_net]
-        
-        Queue --> Core0[net_tx_task - CORE 0<br/>Prioridad 4]
-        
-        Core0 -->|¿Hay Wi-Fi?| Decision{Wi-Fi OK?}
-        Decision -- SÍ --> HTTPClient[Petición HTTP POST<br/>Header: X-API-Key]
-        Decision -- NO --> SPIFFS[Almacenamiento Local SPIFFS<br/>/spiflash/unsent_tx.csv]
-        
-        HTTPClient --> Servidor[Servidor PHP / MySQL]
-        SPIFFS -. Auto-Flush al Reconectar .-> HTTPClient
-
-        Core0 & Core1 -->|Mutex s_oled_mutex| OLEDDriver[Driver U8g2 + i2c_master]
-        OLEDDriver --> OLEDDisplay[Pantalla OLED SH1106 128x64]
-    end
-```
+![Arquitectura del Sistema](Imagenes/DB_concentr.png)
 
 ---
 
