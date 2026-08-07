@@ -1,0 +1,19 @@
+# ESP-IDF & C++ build directories
+build/
+sdkconfig
+sdkconfig.old
+managed_components/
+
+# Visual Studio Code & IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python temporary files
+__pycache__/
+*.pyc
+
+# OS generated files
+.DS_Store
+Thumbs.db
